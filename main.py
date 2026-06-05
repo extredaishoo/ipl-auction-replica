@@ -7,7 +7,7 @@ from supabase import create_client, Client
 app = Flask(__name__)
 CORS(app)  # Allows your hosted frontend website to safely communicate with this backend
 
-# Connect to your online Supabase database using your project credentials
+# Your exact, verified Supabase Cloud Database credentials
 SUPABASE_URL = "https://toopwqxypkeoudxzcdqw.supabase.co"
 SUPABASE_KEY = "sb_publishable_p8rFCr_KDxq2SWXbd6XlSQ_7lEPpchK"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
